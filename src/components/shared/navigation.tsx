@@ -74,7 +74,7 @@ interface Props {
 	className?: string
 }
 
-export const Navigation: FC<Props> = ({ className }) => {
+export const Navigation: React.FC<Props> = ({ className }) => {
 	const pathname = usePathname()
 	return (
 		<NavigationMenu orientation="horizontal">

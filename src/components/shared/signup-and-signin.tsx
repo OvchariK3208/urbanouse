@@ -8,7 +8,7 @@ interface Props {
 	className?: string
 }
 
-export const SignUpAndSignIn: FC<Props> = ({ className }) => {
+export const SignUpAndSignIn: React.FC<Props> = ({ className }) => {
 	return (
 		<div
 			className={cn("flex items-center gap-2.5 w-full md:w-auto", className)}

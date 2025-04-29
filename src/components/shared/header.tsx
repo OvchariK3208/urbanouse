@@ -14,7 +14,7 @@ export function Header() {
 						href="/"
 						className="w-[135px]"
 					>
-						<Icons.logo fill />
+						<Icons.logo />
 					</Link>
 
 					<Navigation className="hidden md:flex" />

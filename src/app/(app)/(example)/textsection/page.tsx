@@ -31,7 +31,7 @@ export default function TextS() {
 			<Icons.gitHub className="size-9" />
 			<Icons.apple className="size-9" />
 			<div className="w-[135px]">
-				<Icons.logo fill />
+				<Icons.logo />
 			</div>
 		</div>
 	)
