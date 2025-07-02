@@ -5,7 +5,6 @@ import { ContainerWrapper } from "@/components/shared/container-wrapper"
 import { TextSection } from "@/components/shared/text-section"
 import { AgentType } from "@/types/agent"
 import { AgentCard } from "@/components/shared/agent-card"
-import { Button } from "@/components/ui/button"
 import {
 	Carousel,
 	CarouselContent,

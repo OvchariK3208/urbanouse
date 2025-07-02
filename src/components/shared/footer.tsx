@@ -33,7 +33,7 @@ export function Footer() {
 							>
 								Let&#39;s work together
 								<MoveRight />
-								<span className="sr-only">Let's work together</span>
+								<span className="sr-only">Let&#39;s work together</span>
 							</Link>
 						</Button>
 					</div>

@@ -1,4 +1,4 @@
-import { Dot, SquareDot } from "lucide-react"
+import { Dot } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
 import { Typography } from "@/components/shared/typography"

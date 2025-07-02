@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Property } from "@/types/property"
+import { PropertyType } from "@/types/property"
 import { Badge } from "@/components/ui/badge"
 import {
 	Card,
@@ -11,14 +11,12 @@ import {
 } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 
-export const ProductCard: React.FC<Property> = ({
-	id,
+export const ProductCard: React.FC<PropertyType> = ({
 	title,
 	description,
 	img,
 	price,
 	tags,
-	location,
 }) => {
 	return (
 		<Card>

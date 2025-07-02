@@ -9,6 +9,7 @@ import { ArrowUpRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { TextSection } from "@/components/shared/text-section"
 import { Typography } from "@/components/shared/typography"
+import { ProjectType } from "@/types/projects"
 
 export function ProjectsImageList() {
 	const [activeIndex, setActiveIndex] = useState(2)

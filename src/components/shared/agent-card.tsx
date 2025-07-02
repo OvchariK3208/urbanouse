@@ -1,20 +1,19 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
-import { Agent } from "@/types/agent"
+import { AgentType } from "@/types/agent"
 import { Star, BriefcaseBusiness, KeyRound, MapPin } from "lucide-react"
-import { Badge } from "@/components/ui/badge"
+// import { Badge } from "@/components/ui/badge"
 import {
 	Card,
 	CardContent,
 	CardDescription,
 	CardHeader,
 	CardTitle,
-	CardSubTitle,
 } from "@/components/ui/card"
 
-export const AgentCard: React.FC<Agent> = ({
-	id,
+export const AgentCard: React.FC<AgentType> = ({
+	// id,
 	img,
 	rating,
 	location,

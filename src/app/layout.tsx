@@ -1,3 +1,4 @@
+import { cn } from "@/lib/utils"
 import type { Metadata } from "next"
 import { Plus_Jakarta_Sans } from "next/font/google"
 import { ThemeProvider } from "@/components/shared/theme-provider"
@@ -33,7 +34,7 @@ export default function RootLayout({
 					content="width=device-width, initial-scale=1.0"
 				/>
 			</head>
-			<body className={(`${plusJakartaSans.variable}`, "bg-background")}>
+			<body className={cn(plusJakartaSans.variable, "bg-background")}>
 				<ThemeProvider
 					attribute="class"
 					defaultTheme="system"

@@ -4,11 +4,11 @@ import { useEffect, useState } from "react"
 import { ContainerWrapper } from "@/components/shared/container-wrapper"
 import { TextSection } from "@/components/shared/text-section"
 import { Button } from "@/components/ui/button"
-import { Property } from "@/types/property"
+import { PropertyType } from "@/types/property"
 import { ProductCard } from "@/components/shared/product-card"
 
 export function FeturedProperties() {
-	const [properties, setProperties] = useState<Property[]>([])
+	const [properties, setProperties] = useState<PropertyType[]>([])
 	const [group, setGroup] = useState<string>("All Properties")
 
 	useEffect(() => {

@@ -5,7 +5,7 @@ import { ContainerWrapper } from "@/components/shared/container-wrapper"
 import { Icons } from "@/components/shared/icons"
 import { TextSection } from "@/components/shared/text-section"
 import { Typography } from "@/components/shared/typography"
-import { TestimonialType } from "@/types/agent"
+import { TestimonialType } from "@/types/testimonial"
 import {
 	Carousel,
 	CarouselContent,

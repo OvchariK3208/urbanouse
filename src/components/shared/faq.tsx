@@ -24,7 +24,7 @@ export function FAQ() {
 							<AccordionContent>
 								You can start by exploring listings through our smart search
 								tool — filter by city, property type (rent or buy), budget,
-								number of rooms, and more. Whether you're browsing independently
+								number of rooms, and more. Whether you&#39;re browsing independently
 								or want help from an agent, Urbanouse makes it easy to begin.
 							</AccordionContent>
 						</AccordionItem>
@@ -62,7 +62,7 @@ export function FAQ() {
 							<AccordionContent>
 								Urbanouse features a wide variety of properties — from city
 								apartments and suburban houses to vacation rentals and
-								commercial spaces. Whether you're looking to rent or buy, we
+								commercial spaces. Whether you&#39;re looking to rent or buy, we
 								have listings to suit different lifestyles and budgets.
 							</AccordionContent>
 						</AccordionItem>
@@ -74,14 +74,14 @@ export function FAQ() {
 							<AccordionContent>
 								Absolutely. Once you find a property that interests you, just
 								click “Schedule a Visit” or contact the listing agent directly.
-								Many properties also offer virtual tours if you'd prefer to
+								Many properties also offer virtual tours if you&#39;d prefer to
 								explore remotely first.
 							</AccordionContent>
 						</AccordionItem>
 					</Accordion>
 
 					<TextSection
-						badge="FAQ's"
+						badge="FAQ&#39;s"
 						title="Frequently Asked Questions"
 						text="Have questions about buying, selling, or renting with Urbanouse? We’ve got the answers to help guide you through the process."
 						className="h-full w-full lg:w-1/2"

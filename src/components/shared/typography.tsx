@@ -4,7 +4,7 @@ import React from "react";
 import { cn } from "@/lib/utils";
 
 type Variant = "h1" | "h2" | "h3" | "h4" | "p" | "li" | "span";
-type StyleVariant = "lead" | "muted";
+type StyleVariant = "lead" | "muted" | "footer";
 
 type TypographyProps = {
   as: Variant;

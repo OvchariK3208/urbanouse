@@ -1,4 +1,3 @@
-import { Plus } from "lucide-react"
 import { ContainerWrapper } from "@/components/shared/container-wrapper"
 import { Typography } from "@/components/shared/typography"
 
