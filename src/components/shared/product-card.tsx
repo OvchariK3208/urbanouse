@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { Property } from "@/types/property"
 import { Badge } from "@/components/ui/badge"
 import {
 	Card,
@@ -8,28 +9,45 @@ import {
 	CardTitle,
 	CardSubTitle,
 } from "@/components/ui/card"
+import { Separator } from "@/components/ui/separator"
 
-export function ProductCard() {
+export const ProductCard: React.FC<Property> = ({
+	id,
+	title,
+	description,
+	img,
+	price,
+	tags,
+	location,
+}) => {
 	return (
 		<Card>
-			<CardHeader className="relative w-full aspect-[3/2]">
+			<CardHeader className="relative aspect-[1/1] w-full md:aspect-[3/2]">
 				<Image
-					src="/test6.jpg"
+					src={img}
 					fill
-					alt="Picture of the author"
+					alt={title}
 					className="rounded-xl object-cover"
 				/>
 				<Badge className="absolute top-2 left-2">for sale</Badge>
 			</CardHeader>
-			<CardContent>
-				<CardTitle>$750,000</CardTitle>
-				<CardSubTitle>Golden Leaf Residence</CardSubTitle>
-				<CardDescription>
-					1012 Oak Avenue
-					<br />
-					Manchester, M1 1AE, United Kingdom
+			<CardContent className="flex flex-1 flex-col">
+				<CardSubTitle>{price}</CardSubTitle>
+				<CardTitle>{title}</CardTitle>
+				<CardDescription className="flex-1">{description}</CardDescription>
+				<CardDescription className="flex gap-2">
+					{tags.map((item, index) => (
+						<>
+							<span>{item}</span>
+							{index < tags.length - 1 && (
+								<Separator
+									orientation="vertical"
+									className="bg-muted-foreground"
+								/>
+							)}
+						</>
+					))}
 				</CardDescription>
-				<CardDescription>3 beds · 2 bath · 900 sq.ft</CardDescription>
 			</CardContent>
 		</Card>
 	)

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export default function Buttons() {
 	return (
 		<>
-			<div className="flex gap-2 p-10 bg-amber-900/20">
+			<div className="flex gap-2 bg-amber-900/20 p-10">
 				<Button className="">default @</Button>
 
 				<Button
@@ -54,7 +54,7 @@ export default function Buttons() {
 					<ArrowRight />
 				</Button>
 			</div>
-			<div className="flex flex-col gap-2 p-10 bg-amber-900/20">
+			<div className="flex flex-col gap-2 bg-amber-900/20 p-10">
 				<Button className="">default @</Button>
 
 				<Button

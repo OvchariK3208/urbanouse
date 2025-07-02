@@ -7,7 +7,7 @@ function Card({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="card"
 			className={cn(
-				"text-card-foreground flex flex-col gap-5", // w-[315px]",
+				"text-card-foreground flex h-full w-full flex-col gap-5", // w-[315px]",
 				className,
 			)}
 			{...props}
@@ -50,7 +50,7 @@ function CardDescription({ className, ...props }: React.ComponentProps<"div">) {
 		<div
 			data-slot="card-description"
 			className={cn(
-				"w-4/5 text-muted-foreground text-base/[150%] tracking-tight",
+				"text-muted-foreground place-content-stretch text-base/[150%] tracking-tight",
 				className,
 			)}
 			{...props}

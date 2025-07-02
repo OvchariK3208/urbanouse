@@ -28,11 +28,15 @@ export function BurgerMenu() {
 				onClick={toggleMenu}
 				className="md:hidden"
 			>
-				{isOpen ? <X className="size-full" /> : <Menu className="size-full" />}
+				{isOpen ? (
+					<X className="fill-primary size-full" />
+				) : (
+					<Menu className="fill-primary size-full" />
+				)}
 			</Button>
 
 			{isOpen && (
-				<div className="md:hidden fixed top-13 left-0 right-0 h-screen z-100 py-5 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+				<div className="bg-background fixed top-13 right-0 left-0 z-100 h-screen py-5 md:hidden">
 					<div className="flex flex-col items-center gap-2.5 px-4">
 						<Navigation className="w-full flex-col space-y-2" />
 						<SignUpAndSignIn className="flex-col" />

@@ -1,12 +1,16 @@
+import { Dot, SquareDot } from "lucide-react"
 import { cn } from "@/lib/utils"
 import { Badge } from "@/components/ui/badge"
-import { Text } from "@/components/shared/text"
+import { Typography } from "@/components/shared/typography"
 
 type TextProps = {
 	badge?: string
 	title: string
 	text: string
 	className?: string
+	orientation?: "horizontal" | "vertical"
+	items?: "start" | "center" | "end"
+	theme?: "light" | "dark"
 }
 
 export const TextSection: React.FC<TextProps> = ({
@@ -14,48 +18,54 @@ export const TextSection: React.FC<TextProps> = ({
 	title,
 	text,
 	className,
+	orientation = "horizontal",
+	items = "start",
+	theme = "light",
 }) => {
 	return (
 		<div
-			className={cn(
-				"max-w-[620px] flex flex-col gap-5 md:max-w-202",
-				className,
-			)}
+			className={cn("flex flex-col gap-5 md:max-w-4/5 md:max-w-202", className)}
 		>
-			<div className="flex flex-col space-y-2">
+			<div
+				className={cn(
+					"flex w-full flex-col items-start gap-2 text-start",
+					items === "center" && "items-center text-center",
+					items === "end" && "items-end text-end",
+				)}
+			>
 				{badge && (
 					<Badge
 						variant="outline"
-						className="text-lg/[150%] tracking-tighter font-medium"
+						className="text-lg/[150%] font-medium tracking-tighter"
 					>
 						{" "}
-						<svg
-							width="12"
-							height="13"
-							viewBox="0 0 12 13"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle
-								cx="6"
-								cy="6.5"
-								r="6"
-								fill="black"
-							/>
-						</svg>
-						{badge}
+						<Dot className="stroke-14 md:stroke-[16] lg:stroke-[18]" />
+						<Typography as="p">{badge}</Typography>
 					</Badge>
 				)}
 
-				<Text as="h2">{title}</Text>
+				<Typography
+					as="h2"
+					className={cn("", theme === "dark" && "text-white")}
+				>
+					{title}
+				</Typography>
 			</div>
-			<div className="flex">
-				<Text
+			<div
+				className={cn(
+					"flex",
+					orientation === "horizontal" && "", //"llg:max-w-1/3 lg:p-5 lg:pl-10 w-full",
+					items === "center" && "text-center",
+					items === "end" && "text-end",
+				)}
+			>
+				<Typography
 					as="p"
-					className="text-xl text-muted-foreground"
+					className={cn("text-xl", theme === "dark" && "text-[#a1a1a1]")}
+					styleVariant="muted"
 				>
 					{text}
-				</Text>
+				</Typography>
 			</div>
 		</div>
 	)

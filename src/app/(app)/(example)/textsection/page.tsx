@@ -9,7 +9,7 @@ export default function TextS() {
 				badge="test"
 				title="title"
 				text="sslslslslslsllslslslls"
-				className="bg-pink-300/20 flex-row items-center justify-between"
+				className="flex-row items-center justify-between bg-pink-300/20"
 			/>
 			<TextSection
 				badge="test"
@@ -20,7 +20,7 @@ export default function TextS() {
 			<TextSection
 				title="title"
 				text="sslslslslslsllslslslls"
-				className="bg-pink-900/20 flex-row items-center justify-between"
+				className="flex-row items-center justify-between bg-pink-900/20"
 			/>
 			<TextSection
 				title="title"

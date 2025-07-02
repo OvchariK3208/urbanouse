@@ -18,7 +18,7 @@ function NavigationMenu({
 			data-slot="navigation-menu"
 			data-viewport={viewport}
 			className={cn(
-				"group/navigation-menu relative flex w-full md:max-w-max md:flex-1 items-center justify-center",
+				"group/navigation-menu relative flex w-full items-center justify-center md:max-w-max md:flex-1",
 				className,
 			)}
 			{...props}
@@ -90,7 +90,7 @@ function NavigationMenuContent({
 		<NavigationMenuPrimitive.Content
 			data-slot="navigation-menu-content"
 			className={cn(
-				"data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 top-0 right-0 w-full prr-2.5 md:absolute md:w-auto",
+				"data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-right-52 data-[motion=from-start]:slide-in-from-left-52 data-[motion=to-end]:slide-out-to-right-52 data-[motion=to-start]:slide-out-to-left-52 prr-2.5 top-0 right-0 w-full md:absolute md:w-auto",
 				"group-data-[viewport=false]/navigation-menu:bg-popover group-data-[viewport=false]/navigation-menu:text-popover-foreground group-data-[viewport=false]/navigation-menu:data-[state=open]:animate-in group-data-[viewport=false]/navigation-menu:data-[state=closed]:animate-out group-data-[viewport=false]/navigation-menu:data-[state=closed]:zoom-out-95 group-data-[viewport=false]/navigation-menu:data-[state=open]:zoom-in-95 group-data-[viewport=false]/navigation-menu:data-[state=open]:fade-in-0 group-data-[viewport=false]/navigation-menu:data-[state=closed]:fade-out-0 group-data-[viewport=false]/navigation-menu:top-full group-data-[viewport=false]/navigation-menu:mt-1.5 group-data-[viewport=false]/navigation-menu:overflow-hidden group-data-[viewport=false]/navigation-menu:rounded-md group-data-[viewport=false]/navigation-menu:border group-data-[viewport=false]/navigation-menu:shadow group-data-[viewport=false]/navigation-menu:duration-200 **:data-[slot=navigation-menu-link]:focus:ring-0 **:data-[slot=navigation-menu-link]:focus:outline-none",
 				className,
 			)}
@@ -106,13 +106,13 @@ function NavigationMenuViewport({
 	return (
 		<div
 			className={cn(
-				"absolute top-full left-50% isolate z-50 flex justify-center",
+				"left-50% absolute top-full isolate z-50 flex justify-center",
 			)}
 		>
 			<NavigationMenuPrimitive.Viewport
 				data-slot="navigation-menu-viewport"
 				className={cn(
-					"origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md shadow-lg shadow-black/5 bg-background backdrop-blur supports-[backdrop-filter]:bg-background md:w-[var(--radix-navigation-menu-viewport-width)]",
+					"origin-top-center bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 bg-background supports-[backdrop-filter]:bg-background relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md shadow-lg shadow-black/5 backdrop-blur md:w-[var(--radix-navigation-menu-viewport-width)]",
 					className,
 				)}
 				{...props}
@@ -145,7 +145,7 @@ function NavigationMenuLink({
 		<NavigationMenuPrimitive.Link
 			data-slot="navigation-menu-link"
 			className={cn(
-				"data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground flex flex-col gap-1 text-muted-foreground text-sm/[150%] font-normal tracking-tight transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
+				"data-[active=true]:text-accent-foreground hover:bg-accent hover:text-accent-foreground focus:text-accent-foreground focus-visible:ring-ring/50 [&_svg:not([class*='text-'])]:text-muted-foreground text-muted-foreground flex flex-col gap-1 text-sm/[150%] font-normal tracking-tight transition-all outline-none focus-visible:ring-[3px] focus-visible:outline-1 [&_svg:not([class*='size-'])]:size-4",
 				//isActive ? "text-red-500" : "text-blue-500"
 				className,
 			)}
