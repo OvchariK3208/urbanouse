@@ -1,3 +1,3 @@
 export default function Buy() {
-	return <div>Buy</div>
+  return <div>Buy</div>
 }

@@ -1,5 +1,5 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
@@ -115,8 +115,8 @@
 }
 
 :root {
-	/* 320  __  430  __ 570 __ 640  __ 768  __ 1024  
+  /* 320  __  430  __ 570 __ 640  __ 768  __ 1024  
 	max-width: 768px;*/
-	width: 100%;
-	margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
